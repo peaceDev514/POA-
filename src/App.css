@@ -1,3 +1,45 @@
-html{
+#root {
+  min-height: 100vh;
+}
+html {
 	scroll-behavior: smooth;
+}
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 55px 6%;
+  background: #171717;
+  color: white;
+  text-align: center;
+}
+
+.footer-brand {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+.footer-brand span {
+  font-weight: 400;
+}
+
+.site-footer p {
+  margin: 0 0 5px;
+  color: #c5c2bb;
+}
+
+.footer-whatsapp {
+  color: #ff865f;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.site-footer small {
+  margin-top: 18px;
+  color: #aaa69f;
 }

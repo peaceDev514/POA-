@@ -300,3 +300,48 @@
     padding-right: 5%;
   }
 }
+
+
+/* Logo image and complete brand name */
+.navbar-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar-logo-image {
+  display: block;
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.navbar-brand-name {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  white-space: nowrap;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+/* Keep the brand name visible on smaller screens */
+@media (max-width: 480px) {
+  .navbar-logo {
+    gap: 6px;
+  }
+
+  .navbar-logo-image {
+    width: 36px;
+    height: 36px;
+  }
+
+  .navbar-brand-name {
+    font-size: 0.95rem;
+  }
+}
+
