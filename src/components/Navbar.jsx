@@ -113,7 +113,18 @@ const Navbar = () => {
         className={`mobile-nav ${menuOpen ? "open" : ""}`}
         aria-label="Mobile navigation"
       >
-        <Link to="/" onClick={closeMenu}>Home</Link>
+        <Link
+	  to="/"
+	  onClick={() => {
+		  closeMenu();
+		  window.scrollTo({
+			  top: 0,
+			  behavior: "smooth",
+		  });
+	  }}
+	  >
+  Home
+</Link>
         <Link to="/shop" onClick={closeMenu}>Collection</Link>
 
         <a href="/#about" onClick={(e) => {
