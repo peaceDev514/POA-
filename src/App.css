@@ -4,6 +4,11 @@
 html {
 	scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  min-width: 320px;
+  background-attachment: fixed;
+}
 .site-footer {
   display: flex;
   flex-direction: column;
